@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "393d9875-21a7-4c16-b175-f707a5b822fb",
+		"name": "Techcombank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getTransactions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\",\r\n    \"begin\": \"04/01/2021\",\r\n    \"end\": \"05/01/2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6789/api/techcombank/getTransactions",
+					"host": [
+						"localhost"
+					],
+					"port": "6789",
+					"path": [
+						"api",
+						"techcombank",
+						"getTransactions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBalance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"\",\r\n    \"password\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:6789/api/techcombank/getBalance",
+					"host": [
+						"localhost"
+					],
+					"port": "6789",
+					"path": [
+						"api",
+						"techcombank",
+						"getBalance"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
